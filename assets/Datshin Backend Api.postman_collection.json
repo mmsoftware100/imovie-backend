@@ -1,0 +1,842 @@
+{
+	"info": {
+		"_postman_id": "1a498e61-4bb6-4e41-87e0-331abab525e9",
+		"name": "Datshin Backend Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Datashin Category Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Datshin Category One",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=category/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "category/insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Category Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=category/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "category/select"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Category Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Updated Category Name",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=category/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "category/update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Category Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=category/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "category/delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin User Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User two",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "personal_data",
+							"value": "testing",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=user/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "role",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "url",
+							"value": "user/insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin User Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=user/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "user/select"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin User Check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User two",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123454",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=user/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "user/check"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin User update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User two",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "personal_data",
+							"value": "update",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "user/update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin User Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "user/delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Ads Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "ads testing",
+							"type": "text"
+						},
+						{
+							"key": "ads_type",
+							"value": "Banner",
+							"type": "text"
+						},
+						{
+							"key": "media_url",
+							"value": "testing.com",
+							"type": "text"
+						},
+						{
+							"key": "ads_status",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "testing.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=ads/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "ads/insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Ads Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "adssdfgsd",
+							"type": "text"
+						},
+						{
+							"key": "ads_type",
+							"value": "Bannerdsafassdfg",
+							"type": "text"
+						},
+						{
+							"key": "media_url",
+							"value": "testing.csdfgs",
+							"type": "text"
+						},
+						{
+							"key": "ads_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "testing.cfsdfgdsg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=ads/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "ads/update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Ads Update Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "adssdfgsd",
+							"type": "text"
+						},
+						{
+							"key": "ads_type",
+							"value": "Bannerdsafassdfg",
+							"type": "text"
+						},
+						{
+							"key": "media_url",
+							"value": "testing.csdfgs",
+							"type": "text"
+						},
+						{
+							"key": "ads_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "testing.cfsdfgdsg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=ads/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "ads/update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Ads Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=ads/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "ads/select"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Ads Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=ads/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "ads/delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Sub Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "Hein",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "premium",
+							"type": "text"
+						},
+						{
+							"key": "exp_date",
+							"value": "12/7/12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=subscription/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "subscription/insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Sub Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "Hein test",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "premium test",
+							"type": "text"
+						},
+						{
+							"key": "exp_date",
+							"value": "12/7/12",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=subscription/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "subscription/update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Sub Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=subscription/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "subscription/select"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datashin Sub Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/datshin-backend-api/api/v1/index.php?url=subscription/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datshin-backend-api",
+						"api",
+						"v1",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "subscription/delete"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
